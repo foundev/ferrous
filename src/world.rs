@@ -8,6 +8,7 @@ pub struct Room {
 }
 
 pub struct Player {
+    #[allow(dead_code)]
     pub name: String,
     pub current_room: usize,
 }
