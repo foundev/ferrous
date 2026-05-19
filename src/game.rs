@@ -1,5 +1,5 @@
-use std::io::{self, Write};
 use crate::world::World;
+use std::io::{self, Write};
 
 pub struct Game {
     world: World,

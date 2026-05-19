@@ -25,17 +25,18 @@ impl World {
         // Room 0: The Starting Room
         let mut start_exits = HashMap::new();
         start_exits.insert("north".to_string(), 1);
-        
+
         rooms.push(Room {
             name: "The Starting Room".to_string(),
-            description: "You are in a cold, damp stone cell. A heavy iron door leads north.".to_string(),
+            description: "You are in a cold, damp stone cell. A heavy iron door leads north."
+                .to_string(),
             exits: start_exits,
         });
 
         // Room 1: The Hallway
         let mut hall_exits = HashMap::new();
         hall_exits.insert("south".to_string(), 0);
-        
+
         rooms.push(Room {
             name: "The Hallway".to_string(),
             description: "A long, dimly lit hallway. You can hear water dripping somewhere. The cell is to the south.".to_string(),
