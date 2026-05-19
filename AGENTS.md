@@ -21,4 +21,8 @@ Ferrous is a GPL-licensed text-based MUD written in Rust.
 ## Workflow
 1. Break complex tasks into smaller steps.
 2. Implement tests for new logic.
-3. Verify functionality with `cargo test` and `cargo run`.
+3. Before committing code, execute the following checks:
+    - `cargo fmt`
+    - `cargo clippy --all-targets --all-features -- -D warnings`
+    - `cargo test --all-features`
+4. Verify functionality with `cargo run`.
